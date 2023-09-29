@@ -29,7 +29,7 @@
             background-color: #000000;
             margin: 0.625rem;
             border-radius: 0.625rem;
-            height: auto;
+            
             form{
                 h2{
                     color: white;
@@ -52,51 +52,31 @@
                 }     
                                 
             }
-        .main__bottom{
+        .main-cursos{
             display: flex;
-            flex-direction: column;
+            text-align: center;
             align-items: center;
             justify-content: center;
+            flex-direction: column;            
             margin: 1.25rem;
-            h2{
-                font-size: 1.875rem;
-            }
-            div{
-                width: 16.375rem;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;                            
-                text-align: center; 
-                max-width: 38.75rem;
-                border: 0.0625rem solid black;
-                border-radius: 1.5625rem;  
-                .container__img{
-                    border: none;
-
+            .titulo{
+                margin: 0 0 1.25rem 0;
+                font-size: 1.875rem; 
+            } 
+            .cont-cursos{
+                border: 1px solid black;
+                border-radius: 1.5625rem; 
+                padding: 0.625rem;
+                max-width:60.625rem ;
+                .cursos-img{
                     img{
-                        height: 9.375rem;
-                        width: 9.375rem;
                         border-radius: 1.5625rem;
+                        margin: 0.3125rem;
+                        height: 12.5rem;
+                        width: 12.5rem;
                     }
-                }                     
-                h3{
-                    margin: 0.9375rem;
-                    text-align: center;
-                }
-            }
-            
-            
-            div{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin: 1.5625rem;
-
-            h3{                
-                text-align: center;
-                }
-            }
+                }              
+            }           
         }
         }
 
