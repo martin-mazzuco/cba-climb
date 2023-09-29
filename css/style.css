@@ -535,33 +535,36 @@
   grid-area: main;
   background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
 }
-.grid-cont main section h1 {
-  color: white;
-}
 .grid-cont main .main__top {
+  color: white;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  margin: 0.9375rem;
 }
-.grid-cont main .buscador__main {
-  background-color: #000000;
-  margin: 0.625rem;
-  border-radius: 0.625rem;
+.grid-cont main .main__top .main__portada {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.grid-cont main .buscador__main form h2 {
-  color: white;
-  padding: 0.625rem;
+.grid-cont main .main__top .main__portada .main__fotos {
+  max-width: 40rem;
 }
-.grid-cont main .buscador__main form div {
-  margin: 25px 0;
+.grid-cont main .main__top .main__portada .buscador__main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 1.5625rem;
+  width: 90%;
+  margin: 25px;
+  min-width: 18rem;
+  min-height: 12.8125rem;
 }
-.grid-cont main .buscador__main form div span {
-  color: white;
+.grid-cont main .main__top .main__portada .buscador__main form h2 {
+  margin-top: 0.625rem;
 }
-.grid-cont main .buscador__main form div div span {
-  color: white;
-}
-.grid-cont main .buscador__main form .container__btn {
-  padding: 1.25rem;
+.grid-cont main .main__top .main__portada .buscador__main form div {
+  margin: 1.25rem;
 }
 .grid-cont main .main-cursos {
   display: flex;
@@ -603,20 +606,20 @@
   }
 }
 @media (min-width: 590px) {
-  main .main__card-s {
+  .grid-cont main .main__card-s {
     display: none;
   }
-  main .main__card-m {
+  .grid-cont main .main__card-m {
     display: flex;
     margin: 1.25rem;
   }
-  main .main__card-m .main__bot {
+  .grid-cont main .main__card-m .main__bot {
     display: grid;
     width: 100%;
     gap: 0.9375rem;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   }
-  main .main-cursos .cont-cursos {
+  .grid-cont main .main-cursos .cont-cursos {
     display: grid;
     align-items: center;
     justify-content: center;
@@ -625,40 +628,28 @@
     grid-template-rows: auto;
     grid-template-areas: "cursos texto" "bntc bntc";
   }
-  main .main-cursos .cont-cursos .btn-cursos {
+  .grid-cont main .main-cursos .cont-cursos .btn-cursos {
     grid-column-start: 0;
     grid-column-end: 3;
     grid-area: bntc;
   }
 }
 @media (min-width: 1024px) {
-  main .main__top .main__portada {
-    display: flex;
+  .grid-cont main .main__top .main__portada {
     flex-direction: row;
-    height: 480px;
+    align-items: stretch;
   }
-  main .main__top .main__portada .main__fotos {
-    margin: 0 150px;
-    height: 100%;
-    width: 37.5rem;
-  }
-  main .main__top .main__portada .buscador__main {
-    padding: 0;
-    width: 50%;
-    margin: auto;
-    height: 85%;
-  }
-  main .main__card-s {
+  .grid-cont main .main__card-s {
     display: none;
   }
-  main .main__card-m {
+  .grid-cont main .main__card-m {
     display: none;
   }
-  main .main__card-l {
+  .grid-cont main .main__card-l {
     display: flex;
     margin: 1.25rem;
   }
-  main .main__card-l .main__bot {
+  .grid-cont main .main__card-l .main__bot {
     display: grid;
     width: 100%;
     gap: 0.9375rem;

@@ -12,79 +12,69 @@
 
 }
 @media (min-width:590px){
-    main{
-        .main__card-s{
-            display: none;
-        }
-        .main__card-m{
-            display:flex;
-            margin: 1.25rem;
-            .main__bot{            
-                display: grid;
-                width: 100%;
-                gap: 0.9375rem; 
-                grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));                
-            }            
-        }
-        .main-cursos{
-            .cont-cursos{
-                display: grid;
-                align-items: center;
-                justify-content: center;
-                justify-items: center;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: auto;
-                grid-template-areas:
-                "cursos texto"
-                "bntc bntc";
-            .btn-cursos{
-                grid-column-start: 0;
-                grid-column-end: 3;
-                grid-area: bntc;
-            }   
+    .grid-cont{
+        main{
+            .main__card-s{
+                display: none;
+            }
+            .main__card-m{
+                display:flex;
+                margin: 1.25rem;
+                .main__bot{            
+                    display: grid;
+                    width: 100%;
+                    gap: 0.9375rem; 
+                    grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));                
+                }            
+            }
+            .main-cursos{
+                .cont-cursos{
+                    display: grid;
+                    align-items: center;
+                    justify-content: center;
+                    justify-items: center;
+                    grid-template-columns: repeat(2,1fr);
+                    grid-template-rows: auto;
+                    grid-template-areas:
+                    "cursos texto"
+                    "bntc bntc";
+                .btn-cursos{
+                    grid-column-start: 0;
+                    grid-column-end: 3;
+                    grid-area: bntc;
+                }   
+                }
             }
         }
     }
 }
 @media (min-width:1024px){
-    main{
-        .main__top{  
-            .main__portada{
+    .grid-cont{
+        main{
+            .main__top{
+                .main__portada{
+                    flex-direction: row;
+                    align-items: stretch;                    
+                }
+            }
+            .main__card-s{
+                display: none;
+            }
+            .main__card-m{
+                display:none;
+            }
+            .main__card-l{
                 display: flex;
-                flex-direction: row;
-                height: 480px;
-                .main__fotos{
-                    margin: 0 150px;
-                    height: 100%;
-                    width: 37.5rem;
-                    
-                }
-                .buscador__main{  
-                    padding: 0; 
-                    width: 50%;                          
-                    margin: auto;
-                    height: 85%;
-                    
-                    
-                }
-            }          
-        }
-        .main__card-s{
-            display: none;
-        }
-        .main__card-m{
-            display:none;
-        }
-        .main__card-l{
-            display: flex;
-            margin: 1.25rem;
-            .main__bot{            
-                display: grid;
-                width: 100%;
-                gap: 0.9375rem;                
-                grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
+                margin: 1.25rem;
+                .main__bot{            
+                    display: grid;
+                    width: 100%;
+                    gap: 0.9375rem;                
+                    grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
 
-            }            
+                }            
+            }
         }
     }
+    
 }

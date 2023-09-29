@@ -15,43 +15,40 @@
     main{
         grid-area: main;
         background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
-        section{
-            h1{
-                color: white;
-            }
-        }
         .main__top{
+            color: white;
+            display: flex;
+            flex-direction: column;
             text-align: center;
-            margin:0.9375rem;
-            
-        }
-        .buscador__main{
-            background-color: #000000;
-            margin: 0.625rem;
-            border-radius: 0.625rem;
-            
-            form{
-                h2{
-                    color: white;
-                    padding: 0.625rem;
+            .main__portada{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                .main__fotos{                  
+                    max-width: 40rem;
                 }
-                div{
-                    span{
-                        color: white;}
-                    margin: 25px 0;
-                    div{
-                        span{
-                            color: white;
+                .buscador__main{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: black;
+                    border-radius: 1.5625rem;
+                    width: 90%;
+                    margin: 25px;
+                    min-width: 18rem;
+                    min-height: 12.8125rem;
+                    form{
+                        h2{
+                            margin-top: 0.625rem;
+                        }
+                        div{
+                            margin: 1.25rem;                           
                         }
                     }
                 }
-                .container__btn{
-                    padding: 1.25rem;
-                }
-                
-                }     
-                                
             }
+
+        }
         .main-cursos{
             display: flex;
             text-align: center;
