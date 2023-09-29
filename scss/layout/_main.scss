@@ -52,29 +52,6 @@
                 }     
                                 
             }
-        .main__bot{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;      
-            h2{
-                color: black;
-                font-size: 1.875rem;
-                margin: 0 0 1.25rem 0;
-            }
-            .main__bot--425{
-                margin: auto;
-                padding: 1.25rem;
-                border: 1px solid black;
-                border-radius: 1.5625rem;
-            }
-            .main__bot--768{
-                display: none;
-            }
-            .main__bot--1024{
-                display: none;
-            }
-        }
         .main__bottom{
             display: flex;
             flex-direction: column;
@@ -93,7 +70,16 @@
                 text-align: center; 
                 max-width: 38.75rem;
                 border: 0.0625rem solid black;
-                border-radius: 1.5625rem;           
+                border-radius: 1.5625rem;  
+                .container__img{
+                    border: none;
+
+                    img{
+                        height: 9.375rem;
+                        width: 9.375rem;
+                        border-radius: 1.5625rem;
+                    }
+                }                     
                 h3{
                     margin: 0.9375rem;
                     text-align: center;
@@ -110,15 +96,8 @@
             h3{                
                 text-align: center;
                 }
-
-
+            }
         }
-            
-        }
-        
-
-        
-
         }
 
 

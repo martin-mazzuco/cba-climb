@@ -1,0 +1,29 @@
+@media (min-width:590px){
+        .main__card-s{
+            display: none;
+        }
+        .main__card-m{
+            display:flex;
+            .main__bot{            
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: auto;
+                grid-template-areas: 
+                "card card"
+                "card card"
+                "btn btn";
+            }
+            .btn__grid{
+                grid-area: btn;
+            }
+        }
+        //BOTTTOOOOOOOOOOM///
+        .main__bottom{
+            div{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                grid-template-rows: auto;
+                
+            }
+        }
+}

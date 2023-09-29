@@ -463,6 +463,63 @@
     opacity: 0.3;
   }
 }
+.main__card-s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main__card-s h2 {
+  color: black;
+  font-size: 1.875rem;
+  margin: 0 0 1.25rem 0;
+}
+.main__card-s .main__bot {
+  margin: auto;
+  padding: 1.25rem;
+  border: 1px solid black;
+  border-radius: 1.5625rem;
+}
+
+.main__card-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main__card-m h2 {
+  color: black;
+  font-size: 1.875rem;
+  margin: 0 0 1.25rem 0;
+}
+.main__card-m .main__bot {
+  margin: auto;
+  padding: 1.25rem;
+  border: 1px solid black;
+  border-radius: 1.5625rem;
+}
+
+.main__card-l {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main__card-l h2 {
+  color: black;
+  font-size: 1.875rem;
+  margin: 0 0 1.25rem 0;
+}
+.main__card-l .main__bot {
+  margin: auto;
+  padding: 1.25rem;
+  border: 1px solid black;
+  border-radius: 1.5625rem;
+}
+
 .grid-cont {
   display: grid;
   height: 100vh;
@@ -507,29 +564,6 @@
 .grid-cont main .buscador__main form .container__btn {
   padding: 1.25rem;
 }
-.grid-cont main .main__bot {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.grid-cont main .main__bot h2 {
-  color: black;
-  font-size: 1.875rem;
-  margin: 0 0 1.25rem 0;
-}
-.grid-cont main .main__bot .main__bot--425 {
-  margin: auto;
-  padding: 1.25rem;
-  border: 1px solid black;
-  border-radius: 1.5625rem;
-}
-.grid-cont main .main__bot .main__bot--768 {
-  display: none;
-}
-.grid-cont main .main__bot .main__bot--1024 {
-  display: none;
-}
 .grid-cont main .main__bottom {
   display: flex;
   flex-direction: column;
@@ -551,6 +585,14 @@
   border: 0.0625rem solid black;
   border-radius: 1.5625rem;
 }
+.grid-cont main .main__bottom div .container__img {
+  border: none;
+}
+.grid-cont main .main__bottom div .container__img img {
+  height: 9.375rem;
+  width: 9.375rem;
+  border-radius: 1.5625rem;
+}
 .grid-cont main .main__bottom div h3 {
   margin: 0.9375rem;
   text-align: center;
@@ -566,6 +608,33 @@
 }
 .grid-cont footer {
   grid-area: footer;
+}
+
+@media (min-width: 320px) {
+  .main__card-m {
+    display: none;
+  }
+}
+@media (min-width: 590px) {
+  .main__card-s {
+    display: none;
+  }
+  .main__card-m {
+    display: flex;
+  }
+  .main__card-m .main__bot {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "card card" "card card" "btn btn";
+  }
+  .main__card-m .btn__grid {
+    grid-area: btn;
+  }
+  .main__bottom div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
