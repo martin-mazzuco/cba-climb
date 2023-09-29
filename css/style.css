@@ -616,24 +616,25 @@
   }
 }
 @media (min-width: 590px) {
-  .main__card-s {
+  main .main__card-s {
     display: none;
   }
-  .main__card-m {
+  main .main__card-m {
     display: flex;
   }
-  .main__card-m .main__bot {
+  main .main__card-m .main__bot {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "card card" "card card" "btn btn";
   }
-  .main__card-m .btn__grid {
+  main .main__card-m .btn__grid {
     grid-area: btn;
   }
-  .main__bottom div {
-    display: grid;
+  main .main__bottom .coderask {
+    display: none;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
   }
 }
 

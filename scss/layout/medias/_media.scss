@@ -2,6 +2,7 @@
     .main__card-m{display: none;}    
 }
 @media (min-width:590px){
+    main{
         .main__card-s{
             display: none;
         }
@@ -22,11 +23,12 @@
         }
         //BOTTTOOOOOOOOOOM///
         .main__bottom{
-            div{
-                display: grid;
+            .coderask{
+                display: none;
                 grid-template-columns: repeat(3,1fr);
                 grid-template-rows: auto;
                 
             }
         }
+    }
 }
