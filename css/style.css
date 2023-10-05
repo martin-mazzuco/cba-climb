@@ -368,23 +368,6 @@
   gap: 0.9375rem;
 }
 
-.title {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  margin: auto;
-  color: black;
-  text-shadow: 0 0 0.625rem rgba(0, 170, 255, 0.598);
-}
-
-.title2 {
-  font-size: 1.5em;
-  font-weight: 900;
-  text-align: center;
-  color: black;
-  text-shadow: 0 0 1.5625rem white;
-}
-
 .innerCard {
   position: relative;
   width: 100%;
@@ -417,20 +400,37 @@
   font-weight: 700;
 }
 
-.frontSide a img {
+.frontSide img {
+  height: 100%;
+  width: 100%;
+}
+
+.backSide a img {
   height: 100%;
   width: 100%;
 }
 
 .backSide,
 .backSide::before {
-  background-image: url(../../assets/img/bg-climb.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 100%;
-  object-fit: cover;
   height: 100%;
   width: 100%;
+}
+.backSide .title,
+.backSide::before .title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  margin: auto;
+  color: black;
+  text-shadow: 0 0 0.625rem rgba(0, 170, 255, 0.598);
+}
+.backSide .title2,
+.backSide::before .title2 {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+  color: black;
+  text-shadow: 0 0 1.5625rem white;
 }
 
 .backSide {
@@ -631,6 +631,11 @@
 .grid-cont main .main__rock--top .rock__titulo {
   color: white;
   margin: 1.5625rem;
+}
+
+.grid-cont main .pales__in--top {
+  text-align: center;
+  color: white;
 }
 
 @media (min-width: 320px) {
