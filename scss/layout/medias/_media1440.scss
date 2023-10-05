@@ -1,0 +1,44 @@
+@media (min-width:1025px){
+    .grid-cont{
+        main{            
+            .main__card-l{                
+                .main__bot{ 
+                    .card-l{
+                        display: none;
+                    } 
+                    .cardx2{
+                        display: none;
+                    }                         
+                    }
+
+                }            
+            }
+        }
+    }
+    
+    @media (min-width:1500px){
+        .grid-cont{
+            main{            
+                .main__card-l{                
+                    .main__bot{ 
+                        .card-l{
+                            display: flex;
+                        }
+                        .cardx2{display: flex;}                          
+                        }
+    
+                    }     
+                .main__cursos-top{
+                    .curso__foto{
+                        img{
+                            width: 640px;
+                        }                        
+                    }
+                    .curso__datos{
+                        width: 640px;
+                    }
+                }     
+                }
+            }
+        }
+        

@@ -1,8 +1,19 @@
+//reset
 @import './vendors/vendors';
+//var
+@import './utilities/variables';
+@import './utilities/mixins';
 //componentes//
 @import './components/button.scss';
 @import './components/cards.scss';
-
+//pages//
 @import './layout/main';
+@import './layout/cursos';
+@import './layout/pales';
+@import './layout/pales-in';
 //mediaquerys//
-@import './layout/medias/media';
+@import './layout/medias/media320';
+@import './layout/medias/media590';
+@import './layout/medias/media1024';
+@import './layout/medias/media1440';
+

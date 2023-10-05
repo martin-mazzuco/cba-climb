@@ -14,12 +14,10 @@
     }
     main{
         grid-area: main;
-        background-image: linear-gradient(to bottom, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+        background-image: $bg-image;
         .main__top{
             color: white;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+            @include flex(center,center,column,0.9375rem);
             .main__portada{
                 display: flex;
                 flex-direction: column;
@@ -31,7 +29,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    background-color: black;
+                    background-color: $bg-color;
                     border-radius: 1.5625rem;
                     width: 90%;
                     margin: 25px;
@@ -49,12 +47,9 @@
             }
 
         }
-        .main-cursos{
-            display: flex;
+        .main-cursos{            
             text-align: center;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;            
+            @include flex(center,center,column,0.9375rem);           
             margin: 1.25rem;
             .titulo{
                 margin: 0 0 1.25rem 0;
