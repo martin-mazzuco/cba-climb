@@ -34,7 +34,7 @@
                     width: 90%;                                                       
                     grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
                 }            
-              }
+            }
             .main__cursos-top{
                 display: grid;                
                 grid-template-columns: repeat(2,1fr);
@@ -57,6 +57,21 @@
                     margin: auto;
                 }
             }
+            .pales__in--mid{
+                max-height: 41.8125rem;
+                display: flex;
+                flex-direction: row;
+                margin: 1.875rem;
+                .pales__portada{
+                    flex-direction: column;
+                    margin: 1.25rem 0px;
+                }
+                .pales__foto-muro{
+                    img{
+                        margin: 0 1.25rem;                        
+                    }
+                }
+            }          
         }
     }
     

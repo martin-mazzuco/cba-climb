@@ -52,9 +52,21 @@
                     grid-template-columns:repeat(auto-fill, minmax(190px, 1fr));
                 }
                
-            }
+            }  
+            .pales__in--mid{
+                .pales__portada{
+                    flex-direction: row;
+                    .pales__horario{
+                        height: 19.1875rem;
+                    }
+                }
+            } 
+            .pales__in--bot{
+                iframe{
+                    height: 23.75rem;
+                    width: 23.75rem;
+                }
+            }           
         }
-
-
     }
 }
