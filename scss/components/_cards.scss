@@ -31,21 +31,23 @@
     backface-visibility: hidden;
     border: 1px solid rgba(255, 255, 255, 0.8);
     border-radius: 1rem;
-    color: white;
+    color: black;
     box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
     font-weight: 700;
   }  
-  .frontSide{    
+  .frontSide{   
+       
         img{
-            height: 100%;
-            width: 100%;
-        }   
+
+            height: 90%;
+            width: 90%;
+          }   
     }
     .backSide{ 
       a{   
       img{
-          height: 100%;
-          width: 100%;
+          height: 90%;
+          width: 90%;
       }  
     } 
   }
@@ -53,22 +55,7 @@
   .backSide,
   .backSide::before {   
     height: 100%;
-    width: 100%;
-    .title {
-      font-size: 1.5em;
-      font-weight: 900;
-      text-align: center;
-      margin: auto;  
-      color: black;    
-      text-shadow: 0 0 0.625rem rgba(0, 170, 255, 0.598);
-    }
-    .title2 {
-      font-size: 1.5em;
-      font-weight: 900;
-      text-align: center;    
-      color: black;
-      text-shadow: 0 0 1.5625rem white;
-    }
+    width: 100%;    
   }
   
   .backSide {
@@ -88,17 +75,14 @@
     border-radius: 1em;
     filter: blur(40px);
     animation: animate 5s linear infinite;
-  }
-  
+  }  
   @keyframes animate {
     0% {
       opacity: 0.3;
-    }
-  
+    }  
     80% {
       opacity: 1;
-    }
-  
+    }  
     100% {
       opacity: 0.3;
     }

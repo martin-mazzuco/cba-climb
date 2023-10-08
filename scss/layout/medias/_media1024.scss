@@ -61,14 +61,14 @@
                 max-height: 41.8125rem;
                 display: flex;
                 flex-direction: row;
-                margin: 1.875rem;
-                .pales__portada{
+                margin: 30px;
+                .pales__portada{                   
                     flex-direction: column;
-                    margin: 1.25rem 0px;
+                    margin: 20px 100px;
                 }
                 .pales__foto-muro{
                     img{
-                        margin: 0 1.25rem;                        
+                        margin: 0 0;                        
                     }
                 }
             }          
