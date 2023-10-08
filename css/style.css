@@ -750,48 +750,48 @@
 }
 
 @media (min-width: 320px) {
-  .grid-cont main .main__card-s {
+  .grid-cont main .main__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .grid-cont main .main__card-s h2 {
+  .grid-cont main .main__card h2 {
     color: black;
     font-size: 1.875rem;
     margin: 0 0 1.25rem 0;
   }
-  .grid-cont main .main__card-s .main__bot {
+  .grid-cont main .main__card .main__bot {
     margin: auto;
     padding: 1.25rem;
     border: 1px solid black;
     border-radius: 1.5625rem;
   }
-  .grid-cont main .main__card-m {
+  .grid-cont main .main__card .main__bot .card-2 {
     display: none;
   }
-  .grid-cont main .main__card-l {
+  .grid-cont main .main__card .main__bot .card-3 {
+    display: none;
+  }
+  .grid-cont main .main__card .main__bot .card-4 {
     display: none;
   }
 }
 @media (min-width: 590px) {
-  .grid-cont main .main__card-s {
-    display: none;
-  }
-  .grid-cont main .main__card-m {
+  .grid-cont main .main__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .grid-cont main .main__card-m h2 {
+  .grid-cont main .main__card h2 {
     color: black;
     font-size: 1.875rem;
     margin: 0 0 1.25rem 0;
   }
-  .grid-cont main .main__card-m .main__bot {
+  .grid-cont main .main__card .main__bot {
     display: flex;
     flex-direction: row;
     gap: 0.9375rem;
@@ -799,6 +799,15 @@
     padding: 1.25rem;
     border: 1px solid black;
     border-radius: 1.5625rem;
+  }
+  .grid-cont main .main__card .main__bot .card-2 {
+    display: flex;
+  }
+  .grid-cont main .main__card .main__bot .card-3 {
+    display: none;
+  }
+  .grid-cont main .main__card .main__bot .card-4 {
+    display: none;
   }
   .grid-cont main .main-cursos .cont-cursos {
     display: grid;
@@ -840,25 +849,19 @@
     flex-direction: row;
     align-items: stretch;
   }
-  .grid-cont main .main__card-s {
-    display: none;
-  }
-  .grid-cont main .main__card-m {
-    display: none;
-  }
-  .grid-cont main .main__card-l {
+  .grid-cont main .main__card {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
   }
-  .grid-cont main .main__card-l h2 {
+  .grid-cont main .main__card h2 {
     color: black;
     font-size: 1.875rem;
     margin: 0 0 1.25rem 0;
   }
-  .grid-cont main .main__card-l .main__bot {
+  .grid-cont main .main__card .main__bot {
     margin: auto;
     padding: 1.25rem;
     border: 1px solid black;
@@ -866,6 +869,12 @@
     display: grid;
     width: 90%;
     grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  }
+  .grid-cont main .main__card .main__bot .card-3 {
+    display: flex;
+  }
+  .grid-cont main .main__card .main__bot .card-4 {
+    display: none;
   }
   .grid-cont main .main__cursos-top {
     display: grid;
@@ -899,19 +908,8 @@
     margin: 0 0;
   }
 }
-@media (min-width: 1025px) {
-  .grid-cont main .main__card-l .main__bot .card-l {
-    display: none;
-  }
-  .grid-cont main .main__card-l .main__bot .cardx2 {
-    display: none;
-  }
-}
 @media (min-width: 1500px) {
-  .grid-cont main .main__card-l .main__bot .card-l {
-    display: flex;
-  }
-  .grid-cont main .main__card-l .main__bot .cardx2 {
+  .grid-cont main .main__card .main__bot .card-4 {
     display: flex;
   }
   .grid-cont main .main__cursos-top .curso__foto img {

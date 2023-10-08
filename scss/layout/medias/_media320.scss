@@ -1,7 +1,7 @@
 @media (min-width:320px){
     .grid-cont{
         main{
-            .main__card-s{
+            .main__card{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -18,14 +18,18 @@
                     padding: 1.25rem;
                     border: 1px solid black;
                     border-radius: 1.5625rem;
-                }            
-            }
-            .main__card-m{
-                display: none;
-            }
-            .main__card-l{
-                display: none;
-            }                        
+                    .card-2{
+                        display: none;
+                    }
+                    .card-3{
+                        display: none;
+                    }
+                    .card-4{
+                        display: none;
+                    }
+                }
+                         
+            }                       
         }
     }   
 }
