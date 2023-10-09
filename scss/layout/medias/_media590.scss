@@ -73,7 +73,16 @@
                     height: 23.75rem;
                     width: 23.75rem;
                 }
-            }           
+            }  
+            //sectores
+            .sectores__ppal--top{
+                align-items: center;
+                justify-content: center;
+                .sectores__card{
+                    height: 550px;
+                }
+            }    
+            
         }
     }
 }

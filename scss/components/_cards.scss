@@ -1,3 +1,4 @@
+//card pales
 .myCard {
     background-color: transparent;
     width: 190px;
@@ -173,3 +174,20 @@
         transform: translate(-50%, -130%);
       }
   }
+//card sectores
+.sectores__card{
+  h2{                    
+      border-bottom: 1px solid black;
+  }    
+  max-width: 25rem;
+  text-align: center;
+  background-color: rgba(119, 119, 119, 0.59);
+  color: white;
+  border: 2px solid black;
+  margin: 0.625rem;
+  padding: 0.625rem;
+  border-radius: 1.5625rem;
+  p{
+    margin: 20px 0;
+  }
+}

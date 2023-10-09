@@ -18,8 +18,20 @@
                     .curso__datos{
                         width: 640px;
                     }
-                }     
+                    } 
+                    //sectores
+                    .sectores__ppal--top{
+                    flex-direction: row;
+                    }
+                    .sectores__guia{                
+                        .tabla{  
+                            width: 800px;              
+                            margin: auto;
+                        }
+                    } 
+
                 }
+
             }
         }
         
