@@ -898,6 +898,9 @@
 .grid-cont main .sectores__ppal--top .sectores__card {
   height: 600px;
 }
+.grid-cont main .sectores__ppal--top .sectores__card div p {
+  height: 15rem;
+}
 
 .grid-cont main .sectores__top {
   color: white;
@@ -1015,6 +1018,9 @@
   }
   .grid-cont main .sectores__ppal--top .sectores__card {
     height: 550px;
+  }
+  .grid-cont main .sectores__ppal--top .sectores__card div p {
+    height: 168px;
   }
 }
 @media (min-width: 1024px) {
