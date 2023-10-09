@@ -6,9 +6,13 @@
             margin: 1.5625rem;            
         }
         .sectores__guia{
-            .sectores__foto{
-                margin: 0.625rem;
+
+            .sectores__foto{               
+               display: flex;
+               justify-content: center;
+               margin: 0 0 0.625rem 0;
                 img{
+                    
                     border-radius: 1.5625rem;
                 }                
             }
@@ -23,7 +27,8 @@
                 margin: 1.25rem;
                 color: white;
             }          
-            .box__sectores{
+            .box__sectores{ 
+                @include flex(center,center,column,0.9375rem);                                      
                 border: 1px solid black;
                 margin: 0.625rem;
                 border-radius: 1.5625rem; 
