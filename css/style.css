@@ -491,7 +491,7 @@
   font-weight: 700;
 }
 
-.frontSide img {
+.frontSide a img {
   height: 90%;
   width: 90%;
 }
@@ -952,6 +952,19 @@
 .grid-cont main .under {
   display: flex;
   justify-content: center;
+}
+
+.grid-cont main .cont-cont {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.367);
+  margin: 0.625rem;
+  border-radius: 1.5625rem;
+}
+.grid-cont main .cont-cont h1 {
+  color: white;
+}
+.grid-cont main .cont-cont .container {
+  color: white;
 }
 
 @media (min-width: 590px) {
