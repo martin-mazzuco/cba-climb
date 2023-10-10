@@ -28,7 +28,8 @@
                 .buscador__main{
                     display: flex;
                     align-items: center;
-                    justify-content: center;
+                    justify-content: space-evenly;
+                    flex-direction: column;
                     background-color: $bg-color;
                     border-radius: 1.5625rem;
                     width: 90%;
@@ -36,11 +37,8 @@
                     min-width: 18rem;
                     min-height: 12.8125rem;
                     form{
-                        h2{
-                            margin-top: 0.625rem;
-                        }
-                        div{
-                            margin: 1.25rem;                           
+                        .div__span{
+                            @include flex(center,center,column,0.9375rem)
                         }
                     }
                 }

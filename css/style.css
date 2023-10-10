@@ -672,7 +672,8 @@
 .grid-cont main .main__top .main__portada .buscador__main {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  flex-direction: column;
   background-color: black;
   border-radius: 1.5625rem;
   width: 90%;
@@ -680,11 +681,12 @@
   min-width: 18rem;
   min-height: 12.8125rem;
 }
-.grid-cont main .main__top .main__portada .buscador__main form h2 {
-  margin-top: 0.625rem;
-}
-.grid-cont main .main__top .main__portada .buscador__main form div {
-  margin: 1.25rem;
+.grid-cont main .main__top .main__portada .buscador__main form .div__span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.9375rem;
 }
 .grid-cont main .main__card {
   display: flex;
